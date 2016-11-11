@@ -21,8 +21,10 @@ Los frameworks mas importantes utilizados en la aplicación son los que se detal
 * Swagger (o Swashbuckle) (http://swagger.io/)
 * xUnit (https://xunit.github.io/)
 * Moq (https://github.com/Moq/moq4)
+
 # Dependencias externas
 Debido a los issues existentes de compatiblidad entre MySQL 5.x y Entity Framework en la funcionalidad de migración de base de datos se decidió utilizar la solución ya establecida en el repositorio destinada a tal fin (https://github.com/ldvalido/DDS-ORM).
+
 # SonarQube
 Asimismo la aplicación cuenta con una instancia dedicada de SonarQube en la url: http://104.196.209.111:9000/.
 Esta aplicaición ejecuta las métricas de código correspondientes del código fuente. Cabe mencionar que dicha instancia se encuentra hosteada en GCP. A fin de poder correr el motor de SonarQube se configuro el Running Environment de Java 8 y al mismo se le agrego el plugin correspondiente para C#.
@@ -32,3 +34,5 @@ Asimismo a través de la url http://104.196.209.111, es posible realizar la nave
 Se incluye la siguiente documentación
 * El DER correspondiente a la base de datos es realizo a través de la herramienta MySql WorkBench 6.3.
 * El Help File correspondiente a la solución y a las diversas clases existentes se realizo con una versión trial de la herramienta Document! X.
+# Próximos Pasos
+Actualmente se esta configurando el circuito de CI con un Jenkins en la url: http://104.196.209.111:8080/. La idea básicamente es poder integrar todo el desarrollo en un flow único a través de esta herramienta.
